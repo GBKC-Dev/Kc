@@ -823,62 +823,7 @@ h6 { font-size: 13px; }
 	background: #076799;
 }
 
-.service-widget .post-media_pp .hover-up{
-	padding: 30px;
-	position: absolute;
-	left: 110%;
-	width: 100%;
-	top: 0;
-	height: 100%;
-	transition: all .35s ease-in-out;
-	opacity: 0;
-}
-.service-widget .post-media_pp:hover .hover-up{
-	opacity: 1;
-	left: 0;
-}
 
-.section.wb .hover-up h3{
-	font-size: 32px;
-	color: #ffffff;
-}
-
-.section.wb .hover-up p{
-	color: #cccccc;
-}
-
-.playbutton {
-    position: absolute;
-    color: #ffffff !important;
-    top: 40%;
-    font-size: 60px;
-    z-index: 12;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: -20px auto;
-}
-
-.hoverbutton {
-    background-color: #333333;
-    position: absolute;
-    color: #ffffff !important;
-    top: 70%;
-    font-size: 21px;
-    z-index: 12;
-    left: 0;
-    opacity: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    margin: -20px auto;
-}
-
-.service-widget:hover .hoverbutton {
-    opacity: 1;
-}
 
 hr.hr1 {
     position: relative;
