@@ -1238,7 +1238,7 @@ hr.invis1 {
 
 .bootstrap-select {
     width: 100% \0;
-    
+    /*IE9 and below*/
 }
 
 .bootstrap-select > .dropdown-toggle {
@@ -1551,7 +1551,7 @@ select.mobile-device {
 }
 
 
-
+/*# sourceMappingURL=bootstrap-select.css.map */
 
 .bootstrap-select > .btn {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1628,7 +1628,6 @@ select.mobile-device {
 	top: 100%;
 	left: 0px;
 }
-
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
