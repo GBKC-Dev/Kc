@@ -123,7 +123,7 @@ h6 { font-size: 13px; }
 	width: 50%;
 }
 .navbar-brand img {
-    height: 80px;
+    height: 40px;
     align: left;
 }
 
@@ -399,7 +399,7 @@ h6 { font-size: 13px; }
 
 .isotope,
 .isotope .isotope-item {
-    /* change duration value to whatever you like */
+    
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
@@ -1293,7 +1293,7 @@ hr.invis1 {
 
 .bootstrap-select {
     width: 100% \0;
-    /*IE9 and below*/
+    
 }
 
 .bootstrap-select > .dropdown-toggle {
@@ -1606,7 +1606,7 @@ select.mobile-device {
 }
 
 
-/*# sourceMappingURL=bootstrap-select.css.map */
+
 
 .bootstrap-select > .btn {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1825,14 +1825,14 @@ select.mobile-device {
 }
 
 
-/* Footer right */
+
 
 .footer-distributed .footer-right {
     float: right;
 }
 
 
-/* The search form */
+
 
 .footer-distributed form {
     position: relative;
@@ -1857,7 +1857,7 @@ select.mobile-device {
 }
 
 
-/* Changing the placeholder color */
+
 
 .footer-distributed form input::-webkit-input-placeholder {
     color: #999;
@@ -1872,8 +1872,6 @@ select.mobile-device {
     color: #999;
 }
 
-
-/* The magnify glass icon */
 
 .footer-distributed form i {
     width: 18px;
@@ -2141,7 +2139,7 @@ select.mobile-device {
         @media screen and (max-width: 480px) {
             .slides {
                 height: 299px;
-                margin-top: 80px; /* Add margin-top for mobile version */
+                margin-top: 60px; 
             }
 
             .slide img {
@@ -2158,19 +2156,19 @@ select.mobile-device {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 20px; /* Optional: Add padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in width */
+    padding: 0 20px;
+    box-sizing: border-box; 
 }
 
 .book {
-    margin-right: 20px; /* Optional: Add margin for spacing */
+    margin-right: 20px; 
 }
 
 .book img {
     width: 500px;
     height: 420px;
     display: block;
-    /* Optional: Adjust image styling as necessary */
+    
 }
 
 @media (max-width: 768px) {
