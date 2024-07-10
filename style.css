@@ -2099,40 +2099,116 @@ select.mobile-device {
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.book-details {
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    max-width: 50%;
+}
+
+.book-title {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.book-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .book {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .book img {
     width: 500px;
     height: 420px;
     display: block;
-    
+}
+
+@media (max-width: 1200px) {
+    .book-title {
+Margin-top:10Px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .book-title {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
     .book-container {
-        height: auto;         min-height: 300px; 
-        flex-direction: column; 
-        align-items: flex-start; 
-        justify-content: center; 
+        height: auto;
+        min-height: 300px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .book {
         margin-right: 0;
-        margin-bottom: 20px; 
+        margin-left: 20px;
     }
 
     .book img {
-        width: 100%; 
-        height: auto; 
-        max-width: 100%; 
-        max-height: none; 
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .book-details {
+        max-width: 60%;
+    }
+
+    .book-title {
+        font-size: 32px;
+    }
+
+    .book-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .book-title {
+        font-size: 28px;
+    }
+
+    .book-subtitle {
+        font-size: 12px;
+    }
+
+    .book-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .book {
+        order: 2;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .book-details {
+        order: 1;
+        max-width: 100%;
     }
 }
 
