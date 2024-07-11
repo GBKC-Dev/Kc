@@ -527,13 +527,13 @@ h6 { font-size: 13px; }
 
 .desc h3 i {
     color: #cccccc;
-    font-size: 37px;
+    font-size: 25px; 
     vertical-align: middle;
-    margin-right: 12px;
+    margin-right: 6px; 
 }
 
 .desc {
-    padding: 30px;
+    padding: 15px; 
     position: relative;
     background: #000;
     border: 1px solid #111111;
@@ -541,22 +541,22 @@ h6 { font-size: 13px; }
 
 .testi-meta {
     display: block;
-    margin-top: 20px;
+    margin-top: 5px; 
 }
 
 .testimonial h4 {
-    font-size: 18px;
+    font-size: 14px; 
     color: #333333;
-    padding: 13px 0 0;
+    padding: 5px 0 0; 
 }
 
 .testimonial img {
-    max-width: 55px;
+    max-width: 40px; 
 }
 
 .testimonial small {
-    margin-top: 7px;
-    font-size: 16px;
+    margin-top: 3px; 
+    font-size: 12px; 
     display: block;
 }
 
@@ -565,8 +565,8 @@ h6 { font-size: 13px; }
 }
 
 .testimonial h3 {
-    padding: 0 0 10px;
-    font-size: 20px;
+    padding: 0 0 6px; 
+    font-size: 16px; 
     font-weight: 600;
 	color: #ffffff;
 }
@@ -576,9 +576,9 @@ h6 { font-size: 13px; }
     background-color: transparent;
     color: #aaa;
     display: block;
-    font-size: 16px;
+    font-size: 12px; 
     font-style: normal;
-    line-height: 30px;
+    line-height: 20px; 
     margin: 0;
     padding: 0;
     position: relative;
@@ -587,9 +587,10 @@ h6 { font-size: 13px; }
 .testimonial p:after {
     display: none;
 }
+
 .testi-carousel .testimonial {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px; 
 }
 
 .testi-carousel .testi-meta {
@@ -597,25 +598,23 @@ h6 { font-size: 13px; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px; 
 }
 
 .testi-carousel .testi-meta img {
-    max-width: 80px;
-    margin-bottom: 10px;
+    max-width: 50px; 
+    margin-bottom: 1px; 
 }
 
 .testi-carousel .testi-meta h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 14px; 
+    margin-bottom: 1px; 
 }
 
 .testi-carousel .testi-meta small {
-    font-size: 14px;
+    font-size: 10px; '
     display: block;
 }
-
-
 /*------------------------------------------------------------------
     ICON BOXES
 -------------------------------------------------------------------*/
