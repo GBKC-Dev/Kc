@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .review-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .review-form h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #333333;
+            font-size: 14px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            color: #333333;
+            transition: border-color 0.3s ease;
+        }
+        .form-group textarea {
+            height: 140px;
+            resize: vertical;
+        }
+        .form-group input[type="file"] {
+            padding: 0;
+            border: none;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 14px 0;
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #555555;
+            transform: translateY(-2px);
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #333333;
+            outline: none;
+        }
+        .review-form .logo {
+            margin-bottom: 20px;
+        }
+        .review-form .logo img {
+            max-width: 100px;
+        }
+        .thank-you-message {
+            display: none;
+            font-size: 18px;
+            color: #333333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="review-form">
+        <div class="logo">
+            <img src="path/to/your/logo.png" alt="Logo">
+        </div>
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="entry.1055024863" required>
+            </div>
+            <div class="form-group">
+                <label for="designation">Designation</label>
+                <input type="text" id="designation" name="entry.1051465577" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact No</label>
+                <input type="tel" id="contact" name="entry.608103116" required>
+            </div>
+            <div class="form-group">
+                <label for="headline">Review Headline</label>
+                <input type="text" id="headline" name="entry.1865156164" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Review</label>
+                <textarea id="review" name="entry.1636489363" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Review</button>
+            </div>
+        </form>
+        <div class="thank-you-message" id="thankYouMessage">
+            Thank you for your review!
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var form = event.target;
+            var formData = new FormData(form);
+            
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLSeT_5RA6sDw55qbYquyEvECk4E1OnGjBoVJ8mVJ4l4gtuhqWA/formResponse', {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(function() {
+                form.reset();
+                document.getElementById('thankYouMessage').style.display = 'block';
+            }).catch(function(error) {
+                console.error('Error!', error.message);
+            });
+        });
+    </script>
+
+</body>
+</html>
