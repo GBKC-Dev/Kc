@@ -5,114 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Form</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            padding: 20px;
-            margin: 0;
-        }
-        .review-form {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-            box-sizing: border-box; /* Ensure padding and border are included in width */
-        }
-        .review-form h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
-            color: #333333;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 700;
-            color: #333333;
-            font-size: 14px;
-        }
-        .form-group input,
-        .form-group textarea,
-        .form-group button {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 16px;
-            background-color: #f9f9f9;
-            color: #333333;
-            transition: border-color 0.3s ease;
-            box-sizing: border-box; /* Ensure padding and border are included in width */
-        }
-        .form-group textarea {
-            height: 140px;
-            resize: vertical;
-        }
-        .form-group input[type="file"] {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 16px;
-            background-color: #f9f9f9;
-            color: #333333;
-            transition: border-color 0.3s ease;
-            box-sizing: border-box; /* Ensure padding and border are included in width */
-        }
-        .form-group button {
-            margin-top: 10px;
-            width: 100%;
-            padding: 14px 0;
-            background-color: #333333;
-            color: #ffffff;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .form-group button:hover {
-            background-color: #555555;
-            transform: translateY(-2px);
-        }
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group button:focus {
-            border-color: #333333;
-            outline: none;
-        }
-        .review-form .logo {
-            margin-bottom: 20px;
-        }
-        .review-form .logo img {
-            max-width: 100px;
-        }
-        .thank-you-message {
-            display: none;
-            font-size: 18px;
-            color: #333333;
-            margin-top: 20px;
-        }
-        @media only screen and (max-width: 600px) {
-            .form-group {
-                margin-bottom: 15px;
-            }
-            .form-group input,
-            .form-group textarea,
-            .form-group button,
-            .form-group input[type="file"] {
-                padding: 10px;
-                font-size: 14px;
-            }
-        }
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    padding: 20px;
+    margin: 0;
+}
+.review-form {
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.review-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+}
+.form-group input,
+.form-group textarea,
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #444444;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.form-group textarea {
+    height: 140px;
+    resize: vertical;
+}
+.form-group input[type="file"] {
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #444444;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.form-group button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.form-group button:hover {
+    background-color: #dddddd;
+    transform: translateY(-2px);
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group button:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+.review-form .logo {
+    margin-bottom: 20px;
+}
+.review-form .logo img {
+    max-width: 100px;
+}
+.thank-you-message {
+    display: none;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group button,
+    .form-group input[type="file"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
